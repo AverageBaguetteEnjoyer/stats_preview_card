@@ -1,0 +1,157 @@
+:root {
+    --bg-body: oklch(16.204% 0.0338 276.565);
+    --bg-card: oklch(23.335% 0.05651 284.143);
+    --clr-font-main: oklch(100% 0.00011 271.152);
+    --clr-heading-highlight: oklch(62.125% 0.19436 310.67);
+    --clr-illustration-overlay: oklch(62.125% 0.19436 310.67);
+    --font-family-main: "Inter", sans-serif;
+    --font-family-stats-label: "Lexend Deca", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-body);
+    font-family: var(--font-family-main);
+}
+
+main {
+    min-height: 100dvh;
+    padding: 2rem 0;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    width: min(calc(100% - 1rem), 70.5rem);
+    background: var(--bg-card);
+    color: var(--clr-font-main);
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card__main {
+    padding: 4rem 5rem;
+    display: grid;
+    gap: 4.5rem;
+}
+
+.card__intro {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.card__intro h1 {
+    font-size: 2.25rem;
+    line-height: 1.25;
+}
+
+.card__intro h1 span {
+    color: var(--clr-heading-highlight);
+}
+
+.card__intro p {
+    width: 40ch;
+    font-size: .9375rem;
+    line-height: 1.65;
+    opacity: 75%;
+}
+
+.card__stats {
+    display: flex;
+    gap: 4rem;
+}
+
+.card__stats-item-value {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.card__stats-item-label {
+    font-size: .75rem;
+    font-family: var(--font-family-stats-label);
+    line-height: 2;
+    opacity: 60%;
+    text-transform: uppercase;
+    letter-spacing: .0625rem;
+}
+
+.card__illustration {
+    height: 27.625rem;
+    position: relative;
+}
+
+.card__illustration::before {
+    content: '';
+    background: var(--clr-illustration-overlay);
+    position: absolute;
+    inset: 0;
+    mix-blend-mode: multiply;
+}
+
+.card__illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 55.9375rem) {
+    .card {
+        width: min(calc(100% - 1rem), 35.25rem);
+        grid-template-columns: 100%;
+    }
+
+    .card__main {
+        order: 2;
+    }
+
+    .card__illustration {
+        order: 1;
+    }
+}
+
+@media (max-width: 34.375rem) {
+    .card {
+        width: min(calc(100% - 3rem), 35.25rem);
+    }
+
+    .card__main {
+        padding: 1.5rem 2rem;
+        text-align: center;
+        gap: 2.5rem;
+    }
+
+    .card__intro {
+        gap: .5rem;
+    }
+
+    .card__intro h1 {
+        font-size: 1.75rem;
+    }
+
+    .card__intro p {
+        width: 100%;
+    }
+
+    .card__stats {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .card__stats-item {
+        display: grid;
+    }
+
+    .card__illustration {
+        height: 15rem;
+    }
+}
