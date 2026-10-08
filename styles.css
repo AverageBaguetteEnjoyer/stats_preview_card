@@ -30,6 +30,7 @@ main {
 
 .card {
     width: min(calc(100% - 1rem), 70.5rem);
+    height: 27.625rem;
     background: var(--bg-card);
     color: var(--clr-font-main);
     border-radius: 8px;
@@ -70,6 +71,10 @@ main {
     gap: 4rem;
 }
 
+.card__stats-item {
+    width: min-content;
+}
+
 .card__stats-item-value {
     font-size: 1.5rem;
     line-height: 1.2;
@@ -86,7 +91,6 @@ main {
 }
 
 .card__illustration {
-    height: 27.625rem;
     position: relative;
 }
 
@@ -95,6 +99,7 @@ main {
     background: var(--clr-illustration-overlay);
     position: absolute;
     inset: 0;
+    opacity: .75;
     mix-blend-mode: multiply;
 }
 
