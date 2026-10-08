@@ -113,7 +113,7 @@ main {
     .card {
         width: min(calc(100% - 1rem), 35.25rem);
         grid-template-columns: 100%;
-        grid-template-rows: auto;
+        grid-template-rows: 27.625rem auto;
     }
 
     .card__main {
@@ -128,6 +128,7 @@ main {
 @media (max-width: 34.375rem) {
     .card {
         width: min(calc(100% - 3rem), 35.25rem);
+        grid-template-rows: 15rem auto;
     }
 
     .card__main {
@@ -156,9 +157,5 @@ main {
     .card__stats-item {
         width: 100%;
         display: grid;
-    }
-
-    .card__illustration {
-        height: 15rem;
     }
 }
