@@ -22,8 +22,8 @@ Users should be able to:
 
 ## Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://www.frontendmentor.io/solutions/stats-preview-component-k81l3x21og
+- Live Site URL: https://statspreviewcard-abe.netlify.app
 
 ## Author
 
