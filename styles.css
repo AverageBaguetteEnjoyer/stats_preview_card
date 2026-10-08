@@ -99,14 +99,14 @@ main {
     background: var(--clr-illustration-overlay);
     position: absolute;
     inset: 0;
-    opacity: .75;
-    mix-blend-mode: multiply;
 }
 
 .card__illustration img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 80%;
+    mix-blend-mode: multiply;
 }
 
 @media (max-width: 55.9375rem) {
