@@ -49,16 +49,16 @@ main {
     gap: 1.5rem;
 }
 
-.card__intro h1 {
+.card__intro-title {
     font-size: 2.25rem;
     line-height: 1.25;
 }
 
-.card__intro h1 span {
+.card__intro-title span {
     color: var(--clr-heading-highlight);
 }
 
-.card__intro p {
+.card__intro-description {
     width: 40ch;
     font-size: .9375rem;
     line-height: 1.65;
@@ -134,11 +134,11 @@ main {
         gap: .5rem;
     }
 
-    .card__intro h1 {
+    .card__intro-title {
         font-size: 1.75rem;
     }
 
-    .card__intro p {
+    .card__intro-description {
         width: 100%;
     }
 
