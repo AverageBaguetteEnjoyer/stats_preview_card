@@ -30,7 +30,6 @@ main {
 
 .card {
     width: min(calc(100% - 1rem), 70.5rem);
-    height: 27.625rem;
     background: var(--bg-card);
     color: var(--clr-font-main);
     border-radius: 8px;
@@ -91,6 +90,7 @@ main {
 }
 
 .card__illustration {
+    height: 27.625rem;
     position: relative;
 }
 
